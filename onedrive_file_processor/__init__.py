@@ -8,8 +8,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     req_body = req.get_json()
     name = req_body.get('name')
-    links = req_body.get('links')
-    logging.debug(f'Links: {links}')
+    audios = req_body.get('audio')
+    logging.debug(f'audio: {audios}')
 
     if name:
         return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
