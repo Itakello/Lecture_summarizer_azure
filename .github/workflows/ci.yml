@@ -28,7 +28,7 @@ jobs:
           pip install -r dev-requirements.txt
 
       - name: Check code style
-      run: flake8 .
+        run: flake8 .
 
       - name: Run tests with coverage
         run: |
